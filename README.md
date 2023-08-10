@@ -1,9 +1,11 @@
 # ArxivHero
 
-This is a hyper-specialized arxiv summarizer. I the source of inspiration was [this video](https://youtu.be/u4CRHtjyHTI?t=3303) of S. Wolfram speaking about LLM applications,
-where he touched upon a common problem with the LLM research field: namely, there are too many papers being published every day and a customized way to summarize and read them is necessary. 
+This is a hyper-specialized arxiv summarizer. 
 
-The engine can also take into account the "intent" of the user, not only "keywords". See for instance the prompts used in the doc generation engine:
+The source of inspiration was [this video](https://youtu.be/u4CRHtjyHTI?t=3303).
+
+### How is this different from searching arxiv and reading the abstracts?
+The intent of ArxivHero
 
 ```python
 
