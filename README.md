@@ -1,4 +1,4 @@
-# ArxivHero
+# ArxivHero🤓
 
 This is a hyper-specialized arxiv summarizer. 
 
