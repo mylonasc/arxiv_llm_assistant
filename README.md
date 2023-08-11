@@ -7,6 +7,7 @@ The source of inspiration was [this video](https://youtu.be/u4CRHtjyHTI?t=3303).
 <details>
 
 <summary> 🤔 FAQ </summary>
+
 ### How is this different from searching arxiv and reading the abstracts?
 The point of this summarizer, is to implement further customization 
 facilities, to allow for a more personalized digest experience. 
