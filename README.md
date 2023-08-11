@@ -1,10 +1,19 @@
-# ArxivHero🤓
+# 🤓 ArxivHero
 
 This is a hyper-specialized arxiv summarizer. 
 
 The source of inspiration was [this video](https://youtu.be/u4CRHtjyHTI?t=3303).
 
+<details>
+
+<summary> 🤔 FAQ </summary>
 ### How is this different from searching arxiv and reading the abstracts?
+The point of this summarizer, is to implement further customization 
+facilities, to allow for a more personalized digest experience. 
+
+Eventually the goal is to have some basic paper metrics and better topic modeling based on citations and/or the knowledge of the reader (e.g., I don't need an explanation of transformers, whereas someone else might need one. Or, an electrical engineer may be interested in different types of transformers! (if it's not an electrical engineer working on LLMs...)
+
+### How is this different from other summarizers?
 There is a similar and more mature paper summarizer called [arxivDigest](https://github.com/AutoLLM/ArxivDigest).
 
 There are 2 main differences with the existing repo:
@@ -13,6 +22,7 @@ There are 2 main differences with the existing repo:
 
 See, for instance, the `Enum` classes `SummaryFocus` and `FlatDomainOntology`. These enums contain some simple strings, that are used in the prompts 
 to encode the intent of the target user in both the top-level summary and in the abstract summary. 
+<details>
 
 ----
 ## Usage
