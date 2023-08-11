@@ -22,7 +22,7 @@ There are 2 main differences with the existing repo:
 
 See, for instance, the `Enum` classes `SummaryFocus` and `FlatDomainOntology`. These enums contain some simple strings, that are used in the prompts 
 to encode the intent of the target user in both the top-level summary and in the abstract summary. 
-<details>
+</details>
 
 ----
 ## Usage
