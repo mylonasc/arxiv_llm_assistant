@@ -8,8 +8,8 @@ The source of inspiration was [this video](https://youtu.be/u4CRHtjyHTI?t=3303).
 There is a similar and more mature paper summarizer called [arxivDigest](https://github.com/AutoLLM/ArxivDigest).
 
 There are 2 main differences with the existing repo:
-1. `arxiv_hero` performs re-ranking (using a classical re-ranking technique) and topic filtering according to the query for the retrieved results
-2. `arxiv_hero` performs ontologically configurable summarization, that includes the users intent. 
+1. `arxiv_hero` performs re-ranking (using both embeddings) and topic modeling (using NMF/bag-of-words/tf-idf) and filtering according to the query for the retrieved results,
+2. `arxiv_hero` performs ontologically configurable summarization, that includes the users' intent. 
 
 See, for instance, the `Enum` classes `SummaryFocus` and `FlatDomainOntology`. These enums contain some simple strings, that are used in the prompts 
 to encode the intent of the target user in both the top-level summary and in the abstract summary. 
