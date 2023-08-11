@@ -1,16 +1,38 @@
+# ArxivHero
 
-## Description:
+This is a hyper-specialized arxiv summarizer. 
 
-1. Template for the Perception, Robotics and Intelligent Machines (PRIME) research group, Université de Moncton, Canada (templatePRIME.tex)
-https://primeai.ca/
+The source of inspiration was [this video](https://youtu.be/u4CRHtjyHTI?t=3303).
 
-2. Can be used as Arxiv Template (see templateArxiv.tex).
+### How is this different from searching arxiv and reading the abstracts?
+There is a similar and more mature paper summarizer called [arxivDigest](https://github.com/AutoLLM/ArxivDigest).
 
-Adapted by Moulay Akhloufi using the Arxiv style of George Kour available at https://github.com/kourgeorge/arxiv-style (last accessed: April 2021)
+There are 2 main differences with the existing repo:
+1. `arxiv_hero` performs re-ranking (using a classical re-ranking technique) and topic filtering according to the query for the retrieved results
+2. `arxiv_hero` performs ontologically configurable summarization, that includes the users intent. 
 
-George Kour Arxiv style is provided under a MIT License (Copyright (c) 2020 George Kour; Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions)
+See, for instance, the `Enum` classes `SummaryFocus` and `FlatDomainOntology`. These enums contain some simple strings, that are used in the prompts 
+to encode the intent of the target user in both the top-level summary and in the abstract summary. 
 
-## Instructions
-1. For PRIME AI paper, use templatePRIME.tex with PRIMEarxiv.sty
-2. For Arxiv paper, use templateArxiv.tex with PRIMEarxiv.sty
-3. Remove the other template if not needed
+----
+## Usage
+Currently this contains just a notebook with everything needed (arxiv query manager, topic modeler, topic filtering, re-ranker, embedder, generative model language engine etc).
+
+The lines that actually produce the output are the following (see "results" section in notebook)
+```python
+interests_query = "llm chatgpt efficient inference"
+sr = ArxivCustomRetrieval(topic_modeler=TFIDFNMFTopicModeler(), q_topic_thresh_val=0.5, top_n_relevant=10)
+sr.run(interests_query)
+d = DocGenerationEngine(sr)
+doc = d.make_document()
+```
+
+Here is an example output:
+![alt-img](img/screenshot.png)
+
+## Limmitations/planned extensions
+This is at a work-in-progress stage at the moment. Plan is to operationalize this somehow. 
+
+It will probably be extended to support more sources and do some more OSINT on the retrieved papers.
+
+
