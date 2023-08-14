@@ -20,7 +20,8 @@
 /* Style the collapsible content. Note: hidden by default */
 .content {
   padding: 0 18px;
-  display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
+  border: 5px ;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }

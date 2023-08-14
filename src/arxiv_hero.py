@@ -356,9 +356,10 @@ class ArxivCustomRetrieval:
 def _make_html_from_query_res(query_res, summary):
     entry_id = query_res.entry_id
     s = ''
-    s += '<div><h4><a href=' + entry_id + '>' + query_res.title
-    s += ' (' + entry_id.split('/')[-1] + ')'  + '</a> </h4><div>'
-    s += '<p>' + summary + '</p>'
+    s += '<div class="content">\n<h4><a href=' + entry_id + '>' + query_res.title
+    s += ' (' + entry_id.split('/')[-1] + ')'  + '</a> </h4>\n' 
+    s += '<p>' + summary + '</p>\n'
+    s += '</div>'
     return s
 
 ##### prompts ##########
@@ -442,7 +443,7 @@ class DocGenerationEngine:
     def _document_intro_maker(self, paper_titles_concat):
         return self.llm_chain_intro_maker.run(input_text = paper_titles_concat, doc_ontology = str(self.doc_ontology_text))
 
-    def make_document(self):
+    def make_document(self, add_body_and_html = True, add_css = True):
         from tqdm import tqdm
         ## Create very brief summaries for each paper:
         paper_summaries = []
@@ -457,8 +458,25 @@ class DocGenerationEngine:
             
         if self.intro is None:
             self.paper_summaries_for_render =  [_make_html_from_query_res(q, summ) for q, summ in zip(most_rel_query_res, self.paper_summaries)]
-            self.intro = self._document_intro_maker(''.join(paper_summaries))
-            
-        return self.intro + '\n'.join(self.paper_summaries_for_render)
+            self.intro = '<div class="intro content">' + self._document_intro_maker(''.join(paper_summaries)) +' </div>'
+
+
+        s = ''
+        if add_body_and_html:
+            s += '<html>'
+            if add_css:
+                s += '<head>'
+                s +='<style>'
+                s += css
+                s +='</style>'
+                s += '</head>'
+            s += '<body>'
+
+        s += self.intro + '\n'.join(self.paper_summaries_for_render)
+
+        if add_body_and_html:
+            s += '</body>'
+            s += '</html>'
+        return  s
             
 
