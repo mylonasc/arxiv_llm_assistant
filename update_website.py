@@ -6,7 +6,7 @@ import datetime
 from bs4 import BeautifulSoup
 today = datetime.datetime.today()
 
-KEYWORDS='large language models,efficient transformers,graph neural networks,qlora'
+KEYWORDS='large language models,efficient, transformers, graph neural networks, qlora'
 TOP_N=10
 Q_TOPICS=0.9
 date_string_html = today.strftime('%d%m%y')

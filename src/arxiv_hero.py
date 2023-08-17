@@ -410,10 +410,10 @@ class DocGenerationEngine:
         
         prompt_template_intro = '''
             Write a short and engaging title (around 30 words) and introduction 
-            (around 200 words) for a document that presents recent {doc_ontology}.
+            (around 200 words) for a newsletter that presents recent developments in {doc_ontology}.
             Focus the intro on potential breakthroughs from the presented text. 
             
-            Here is the section of text to use for the summary:
+            Here is the section of text from the papers included to be used for the summary:
             {input_text}
         
             wrap the title in an HTML <h1> tag and the intro in a <p> tag.

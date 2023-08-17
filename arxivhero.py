@@ -5,7 +5,7 @@ from typing import List
 import argparse
 
 
-parser = argparse.ArgumentParser('Process some integers.')
+parser = argparse.ArgumentParser('Create a webpage containing a digest of recent arxiv papers according to some keywords.')
 parser.add_argument('--keywords',type=str,nargs='+',
         help= 'keywords - include in quotes, separate with commas')
 parser.add_argument('--top-n-relevant',default = 10, type=int,help = 'Number or relevant papers to retrieve.')
