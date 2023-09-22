@@ -1,0 +1,82 @@
+<html><head></head><html><head><style>
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  border: 5px ;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+</style></head><body><div class="intro content">
+<h1>Unlocking the Potential of Machine Learning Research: Recent Breakthroughs</h1>
+
+<p>Recent developments in machine learning research have the potential to create a lasting impact in academic research. From LongLoRA, an efficient fine-tuning approach that extends the context sizes of pre-trained large language models with limited computation cost, to Boolformer, a Transformer architecture that can perform symbolic regression of Boolean functions, the potential for these breakthroughs is immense. This newsletter presents a summary of the recent developments in machine learning research, from efficient fine-tuning strategies for pre-trained language models to generate-and-rerank approaches to improve the quality of natural language generation from logical forms. </p>
+
+<p>LongLoRA has the potential to create a lasting impact in academic research by enabling context extension with non-trivial computation savings and similar performance to fine-tuning with vanilla attention. It is compatible with most existing techniques and is practical with the LongQA dataset for supervised fine-tuning. This paper also presents a parallel algorithm that accelerates the training of non-linear sequential models, such as Recurrent Neural Networks and Neural Ordinary Differential Equations, by up to 3 orders </div><div class="content">
+<h4><a href=http://arxiv.org/abs/2309.12307v1>LongLoRA: Efficient Fine-tuning of Long-Context Large Language Models (2309.12307v1)</a> </h4>
+<p>
+LongLoRA is an efficient fine-tuning approach that extends the context sizes of pre-trained large language models with limited computation cost. It has the potential to create a lasting impact in academic research by enabling context extension with non-trivial computation savings and similar performance to fine-tuning with vanilla attention. LongLoRA is compatible with most existing techniques and is practical with the LongQA dataset for supervised fine-tuning.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2309.12252v1>Parallelizing non-linear sequential models over the sequence length (2309.12252v1)</a> </h4>
+<p>
+This paper presents a parallel algorithm that accelerates the training of non-linear sequential models, such as Recurrent Neural Networks and Neural Ordinary Differential Equations, by up to 3 orders of magnitude faster. This breakthrough has the potential to create a lasting impact in academic research, as it unlocks the potential of these models for long sequence problems.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2309.12109v1>PEFTT: Parameter-Efficient Fine-Tuning for low-resource Tibetan pre-trained language models (2309.12109v1)</a> </h4>
+<p>
+This paper presents efficient fine-tuning strategies for pre-trained language models in Tibetan, a low-resource language. The experiments demonstrate significant improvements, providing valuable insights for advancing Tibetan language applications. This research has the potential to create a lasting impact in academic research of the described techniques.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2309.12263v1>On the Relationship between Skill Neurons and Robustness in Prompt Tuning (2309.12263v1)</a> </h4>
+<p>
+This paper explores the relationship between skill neurons and robustness in Prompt Tuning, a parameter-efficient finetuning method for PLMs. Results suggest that Prompt Tuning is transferable to tasks of the same type, but not very robust to adversarial data. The potential for these findings to create a lasting impact in academic research is high, as they may lead to improved robustness of Prompt Tuning.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2309.12284v1>MetaMath: Bootstrap Your Own Mathematical Questions for Large Language Models (2309.12284v1)</a> </h4>
+<p>
+MetaMath is a fine-tuned language model that specializes in mathematical reasoning, and has the potential to create a lasting impact in academic research. Experiments on two popular benchmarks show that MetaMath outperforms existing open-source LLMs by a significant margin, and even surpasses GPT-3.5-Turbo. The dataset, models, and training code are released for public use.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2309.12253v1>SALSA-CLRS: A Sparse and Scalable Benchmark for Algorithmic Reasoning (2309.12253v1)</a> </h4>
+<p>
+SALSA-CLRS is a benchmark for algorithmic reasoning that prioritizes scalability and sparse representations. It includes adapted algorithms from the original CLRS benchmark and introduces new problems from distributed and randomized algorithms. The potential for this benchmark to create a lasting impact in academic research is high, as it allows for the efficient evaluation of algorithms that can generalize to larger instances.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2309.12247v1>Bad Actor, Good Advisor: Exploring the Role of Large Language Models in Fake News Detection (2309.12247v1)</a> </h4>
+<p>
+This paper explores the potential of large language models (LLMs) in fake news detection. Results show that while LLMs can expose fake news and provide multi-perspective rationales, they still underperform small language models (SLMs). To bridge this gap, the authors propose an adaptive rationale guidance network (ARG) that allows SLMs to selectively acquire insights from LLMs. Experiments demonstrate that ARG and its distilled version (ARG-D) outperform existing methods, suggesting that LLMs can be a powerful advisor for SLMs in fake news detection, with the potential to create a lasting impact in academic research.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2309.12161v1>Code Soliloquies for Accurate Calculations in Large Language Models (2309.12161v1)</a> </h4>
+<p>
+This paper presents a novel stateful prompt design to generate high-quality conversational datasets for Large Language Models (LLM) used in Intelligent Tutoring Systems (ITS). The approach uses GPT-4 to simulate a student-teacher dialogue, and triggers a soliloquy in the GPT-tutorbot to script code in Python for complex calculations. Results show that finetuning with datasets enriched with code soliloquies increases accuracy and computational reliability of LLM responses, creating a lasting impact in academic research of the described techniques.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2309.12294v1>Reranking for Natural Language Generation from Logical Forms: A Study based on Large Language Models (2309.12294v1)</a> </h4>
+<p>
+This paper presents a novel generate-and-rerank approach to improve the quality of natural language generation from logical forms. Experiments on three datasets show that the proposed approach outperforms baseline methods in terms of semantic consistency and fluency, providing a potential for lasting impact in academic research.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2309.12207v1>Boolformer: Symbolic Regression of Logic Functions with Transformers (2309.12207v1)</a> </h4>
+<p>
+Boolformer is a Transformer architecture that can perform symbolic regression of Boolean functions, providing an interpretable alternative to classic machine learning methods. It can accurately predict compact formulas for complex functions and approximate expressions from incomplete and noisy observations. It has been evaluated on a broad set of real-world binary classification datasets and applied to modelling gene regulatory networks, showing potential to create a lasting impact in academic research.</p>
+</div></body></html><body></body></html>
