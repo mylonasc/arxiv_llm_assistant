@@ -1,0 +1,82 @@
+<html><head></head><html><head><style>
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  border: 5px ;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+</style></head><body><div class="intro content">
+<h1>Unlocking the Potential of Machine Learning Research: Recent Breakthroughs</h1>
+
+<p>Recent developments in machine learning research have the potential to revolutionize the field. From GraphLLM, a pioneering end-to-end approach that integrates graph learning models with Large Language Models (LLMs) to enable LLMs to proficiently interpret and reason on graph data, to HyperAttention, a new approximate attention mechanism that can address the computational challenges posed by long contexts in LLMs, to FireAct, a novel approach to fine-tuning language models to create language agents that can reason and act, the potential for these breakthroughs to create a lasting impact in academic research is clear. 
+
+This newsletter will present a summary of the recent developments in machine learning research, including GraphLLM, HyperAttention, AucArena, and FireAct. We will discuss the potential of these breakthroughs to create a lasting impact in academic research, as well as the unique concerns associated with deploying LLMs in Healthcare settings. We will also provide an overview of the development roadmap from traditional Pretrained Language Models (PLMs) to LLMs, and investigate the potential of LLMs in the Healthcare domain to effectively respond to fre </div><div class="content">
+<h4><a href=http://arxiv.org/abs/2310.05845v1>GraphLLM: Boosting Graph Reasoning Ability of Large Language Model (2310.05845v1)</a> </h4>
+<p>
+This paper presents GraphLLM, a pioneering end-to-end approach that integrates graph learning models with Large Language Models (LLMs) to enable LLMs to proficiently interpret and reason on graph data. Results show a substantial accuracy enhancement of 54.44% and a noteworthy context reduction of 96.45%, demonstrating the potential for GraphLLM to create a lasting impact in academic research.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2310.05869v1>HyperAttention: Long-context Attention in Near-Linear Time (2310.05869v1)</a> </h4>
+<p>
+HyperAttention is a new approximate attention mechanism that can address the computational challenges posed by long contexts in LLMs. It introduces two parameters to capture the hardness of the problem and offers a linear time sampling algorithm, even when the matrix has unbounded entries or a large stable rank. This could have a lasting impact in academic research, as it offers significant speed improvements compared to existing methods.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2310.05707v1>Guiding Language Model Reasoning with Planning Tokens (2310.05707v1)</a> </h4>
+<p>
+This paper presents a novel approach to enhance the reasoning capacity of large language models (LLMs) by introducing 'planning tokens' to guide the model. The approach requires minimal additional parameters and can be applied through either full fine-tuning or a more parameter-efficient scheme. Results show significant accuracy improvements across three math word problem datasets, suggesting potential for a lasting impact in academic research of the described techniques.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2310.05736v1>LLMLingua: Compressing Prompts for Accelerated Inference of Large Language Models (2310.05736v1)</a> </h4>
+<p>
+This paper presents LLMLingua, a technique to compress lengthy prompts for LLMs, allowing for faster inference and reduced cost. Experiments show that LLMLingua can achieve up to 20x compression with little performance loss, creating a lasting impact in academic research.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2310.05884v1>A Meta-Learning Perspective on Transformers for Causal Language Modeling (2310.05884v1)</a> </h4>
+<p>
+This paper presents a meta-learning perspective on the Transformer architecture for causal language modeling, uncovering an inner optimization process and a special characteristic of the norms of learned token representations. The potential for these findings to create a lasting impact in academic research is promising.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2310.05694v1>A Survey of Large Language Models for Healthcare: from Data, Technology, and Applications to Accountability and Ethics (2310.05694v1)</a> </h4>
+<p>
+This survey outlines the potential of large language models (LLMs) in the Healthcare domain to effectively respond to freetext queries and provides an overview of the development roadmap from traditional Pretrained Language Models (PLMs) to LLMs. It also investigates the unique concerns associated with deploying LLMs in Healthcare settings, such as fairness, accountability, transparency and ethics. The survey has the potential to create a lasting impact in academic research by providing a comprehensive investigation from perspectives of both computer science and Healthcare specialty, as well as compiling a collection of open source resources.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2310.05818v1>SC-Safety: A Multi-round Open-ended Question Adversarial Safety Benchmark for Large Language Models in Chinese (2310.05818v1)</a> </h4>
+<p>
+SC-Safety is a multi-round open-ended question adversarial safety benchmark for Chinese LLMs. It provides insights on model selection and safety levels, and has the potential to create a lasting impact in academic research by promoting collaborative efforts to create safer and more trustworthy LLMs.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2310.05719v1>Transformer Fusion with Optimal Transport (2310.05719v1)</a> </h4>
+<p>
+This paper presents a systematic approach for fusing two or more transformer-based networks using Optimal Transport to combine their capabilities. Results show that this approach outperforms vanilla fusion and the individual parent models, providing a new and efficient way for compression of Transformers. The potential for this technique to create a lasting impact in academic research is significant.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2310.05746v1>Put Your Money Where Your Mouth Is: Evaluating Strategic Planning and Execution of LLM Agents in an Auction Arena (2310.05746v1)</a> </h4>
+<p>
+This paper presents AucArena, a novel simulation environment for evaluating the strategic reasoning of LLMs in competitive, dynamic scenarios. Results show that LLMs can exhibit advanced reasoning skills and manage resources and risk effectively, with potential to model intricate social dynamics. However, variability in LLM capabilities is observed, suggesting further improvements in agent design.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2310.05915v1>FireAct: Toward Language Agent Fine-tuning (2310.05915v1)</a> </h4>
+<p>
+This paper presents FireAct, a novel approach to fine-tuning language models to create language agents that can reason and act. Results show that fine-tuning can lead to significant improvements in performance, with a 77% increase in HotpotQA performance. The potential for this approach to create a lasting impact in academic research is clear.</p>
+</div></body></html><body></body></html>
