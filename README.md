@@ -4,6 +4,8 @@ This is a hyper-specialized arxiv summarizer.
 
 The source of inspiration was [this video](https://youtu.be/u4CRHtjyHTI?t=3303).
 
+A script that uses this library is run daily at 8:00 am (if my server is up and my GPU not otherwise busy) and saves updates [here](https://mylonasc.github.io/arxiv_llm_assistant/).
+
 <details>
 
 <summary> 🤔 FAQ </summary>
