@@ -1,0 +1,82 @@
+<html><head></head><html><head><style>
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  border: 5px ;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+</style></head><body><div class="intro content">
+<h1>Unlocking the Potential of Machine Learning Research: Recent Developments</h1>
+
+<p>The field of machine learning research is constantly evolving, with new techniques and approaches being developed to improve the performance of language models and other AI-driven tasks. Recent developments in this area have the potential to create a lasting impact in academic research, with breakthroughs in visual encoding, language model representational capacity, inference efficiency, mathematical problem-solving, transformer training, molecule understanding, black-box prompt search, analogy generation, fine-tuning, and query routing. 
+
+In this newsletter, we will explore the latest developments in machine learning research and discuss the potential breakthroughs that these new techniques could bring. We will look at a novel technique for leveraging large language models (LLMs) to improve performance on a variety of visual tasks, a theoretical analysis of the representational capacity of recurrent neural language models, a technique to boost the inference efficiency of parameter-shared pre-trained language models, a framework that uses subgoal-based methods to enhance LLMs' ability to solve mathematical problems, a new phenomenon in which transformers rapidly learn previously incomprehensible tasks, a technique that enables Language Models to understand both text and graph-based molecular contents </div><div class="content">
+<h4><a href=http://arxiv.org/abs/2310.12973v1>Frozen Transformers in Language Models Are Effective Visual Encoder Layers (2310.12973v1)</a> </h4>
+<p>
+This paper presents a novel technique for leveraging large language models (LLMs) to improve performance on a variety of visual tasks, without the need for language prompts or outputs. Results show that frozen transformer blocks from pre-trained LLMs can be used as effective visual encoder layers, leading to improved performance across a range of tasks. The potential for this technique to create a lasting impact in academic research is significant.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2310.12942v1>On the Representational Capacity of Recurrent Neural Language Models (2310.12942v1)</a> </h4>
+<p>
+This paper presents a theoretical analysis of the representational capacity of recurrent neural language models, showing that they can simulate any probabilistic Turing machine with unbounded computation time, and any deterministic real-time rational PTMs with real-time computation. This has the potential to create a lasting impact in academic research, allowing for more powerful language models to be developed.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2310.12818v1>Boosting Inference Efficiency: Unleashing the Power of Parameter-Shared Pre-trained Language Models (2310.12818v1)</a> </h4>
+<p>
+This paper presents a technique to boost the inference efficiency of parameter-shared pre-trained language models, enabling them to be used in resource-constrained environments. The proposed technique and pre-training method have been shown to reduce model storage and memory costs while maintaining performance, creating a lasting impact in academic research.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2310.12960v1>SEGO: Sequential Subgoal Optimization for Mathematical Problem-Solving (2310.12960v1)</a> </h4>
+<p>
+SEGO is a novel framework that uses subgoal-based methods to enhance LLMs' ability to solve mathematical problems. It establishes a connection between subgoal breakdown and problem-solving probability, and generates problem-specific subgoals to adjust according to criteria. Experiments show that SEGO outperforms existing methods, demonstrating its potential to create a lasting impact in academic research of AI-driven mathematical problem-solving.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2310.12956v1>Eureka-Moments in Transformers: Multi-Step Tasks Reveal Softmax Induced Optimization Problems (2310.12956v1)</a> </h4>
+<p>
+This paper presents a new phenomenon, Eureka-moments, in which transformers rapidly learn previously incomprehensible tasks after training and validation loss have saturated. The authors trace the problem to the Softmax function in the self-attention block of transformers and suggest fixes that improve training speed, accuracy, and robustness. This could have a lasting impact in academic research by providing a more efficient and reliable way to train transformers.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2310.12798v1>MolCA: Molecular Graph-Language Modeling with Cross-Modal Projector and Uni-Modal Adapter (2310.12798v1)</a> </h4>
+<p>
+MolCA is a new technique that enables Language Models to understand both text and graph-based molecular contents, bridging the gap between human professionals and LMs. It uses a cross-modal projector and uni-modal adapter to improve molecule understanding, and has been shown to outperform baselines on tasks of molecule captioning, IUPAC name prediction, and molecule-text retrieval. This could have a lasting impact on academic research.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2310.12774v1>Survival of the Most Influential Prompts: Efficient Black-Box Prompt Search via Clustering and Pruning (2310.12774v1)</a> </h4>
+<p>
+This paper presents a black-box prompt search method, ClaPS, which leverages the insight that only a small number of tokens have a disproportionate influence on LLM predictions. By clustering and pruning the search space, ClaPS achieves state-of-the-art performance while significantly reducing search costs. This could have a lasting impact on academic research, as it demonstrates the critical role of search space design and optimization in enhancing the usefulness and efficiency of black-box prompt-based learning.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2310.12874v1>StoryAnalogy: Deriving Story-level Analogies from Large Language Models to Unlock Analogical Understanding (2310.12874v1)</a> </h4>
+<p>
+This paper presents a large-scale story-level analogy corpus, StoryAnalogy, and evaluates the ability of large language models to identify and generate analogies. Results show that the analogy identification tasks are difficult for LLMs, but data from StoryAnalogy can improve their analogy generation quality. This could have a lasting impact on academic research of natural language understanding.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2310.12962v1>An Emulator for Fine-Tuning Large Language Models using Small Language Models (2310.12962v1)</a> </h4>
+<p>
+This paper presents a novel technique, Emulated Fine-Tuning (EFT), which decouples the knowledge and skills gained in pre-training and fine-tuning stages of language models. EFT enables test-time adjustment of competing behavioral traits and LM up-scaling, which ensembles large pre-trained models with small fine-tuned models, to improve helpfulness and factuality of instruction-following models without additional training. This has the potential to create a lasting impact in academic research of language models.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2310.12963v1>AutoMix: Automatically Mixing Language Models (2310.12963v1)</a> </h4>
+<p>
+AutoMix is a new approach to strategically route queries to larger language models, based on the approximate correctness of outputs from a smaller model. This technique has the potential to create a lasting impact in academic research by optimizing computational cost and performance, while improving accuracy by up to 89%.</p>
+</div></body></html><body></body></html>
