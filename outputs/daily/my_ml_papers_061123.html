@@ -1,0 +1,86 @@
+<html><head></head><html><head><style>
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  border: 5px ;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+</style></head><body><div class="intro content">
+<h1>Unlocking the Potential of Machine Learning Research: Recent Developments</h1>
+
+<p>The field of machine learning is constantly evolving, with new research and developments being made every day. From deep Transformers to GateLoop sequence models, the potential of machine learning research is vast and ever-growing. In this newsletter, we will explore some of the most recent developments in machine learning research and discuss how they could have a lasting impact on the field. 
+
+We will start by looking at a simplified design recipe for deep Transformers, which reduces complexity and increases training speed and performance. This could have a lasting impact in academic research of the described techniques. We will then move on to GateLoop, a powerful sequence model that leverages data-controlled state transitions to improve linear recurrent models. This efficient model has potential to create a lasting impact in academic research. 
+
+Next, we will discuss a method for developing concept-aware large language models, which could have a lasting impact on academic research. We will also explore a strategy of introducing language models to simpler concepts first and building off of that knowledge to understand more complex concepts. This has the potential to create a lasting impact in academic research of language models. 
+
+We will then </div><div class="content">
+<h4><a href=http://arxiv.org/abs/2311.01906v1>Simplifying Transformer Blocks (2311.01906v1)</a> </h4>
+<p>
+This paper presents a simplified design recipe for deep Transformers, which reduces complexity and increases training speed and performance. The proposed modifications allow for the removal of components such as skip connections, projection or value parameters, sequential sub-blocks and normalisation layers with no loss of training speed. Experiments show that the simplified Transformers emulate the per-update training speed and performance of standard Transformers, while providing 15% faster training throughput and using 15% fewer parameters. This could have a lasting impact in academic research of the described techniques.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2311.01927v1>GateLoop: Fully Data-Controlled Linear Recurrence for Sequence Modeling (2311.01927v1)</a> </h4>
+<p>
+GateLoop is a powerful sequence model that leverages data-controlled state transitions to improve linear recurrent models. It has been empirically proven to outperform existing models, and its efficient $O(l \log_{2} l)$ parallel mode has potential to create a lasting impact in academic research. Furthermore, its $O(l^2)$ surrogate attention mode suggests data-controlled complex cumulative products may be a key factor in more powerful sequence models.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2311.01866v1>Towards Concept-Aware Large Language Models (2311.01866v1)</a> </h4>
+<p>
+This paper presents a method for developing concept-aware large language models, which could have a lasting impact on academic research. It explores ways to pretrain LLMs using concepts, and also discusses a simpler approach that uses the output of existing LLMs. Preliminary results suggest improved robustness of predictions and better matching of human intuition.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2311.01955v1>Too Much Information: Keeping Training Simple for BabyLMs (2311.01955v1)</a> </h4>
+<p>
+This paper presents a strategy of introducing language models to simpler concepts first and building off of that knowledge to understand more complex concepts. Results show that this strategy can lead to significant improvements in performance on a variety of tasks, with an average improvement of 2 points on (Super)GLUE tasks, 1 point on MSGS tasks, and 12\% on average on BLiMP tasks. This has the potential to create a lasting impact in academic research of language models.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2311.01964v1>Don't Make Your LLM an Evaluation Benchmark Cheater (2311.01964v1)</a> </h4>
+<p>
+This paper discusses the potential risks of inappropriately using evaluation benchmarks for large language models, such as benchmark leakage. It presents guidelines to ensure fair comparison of models and reliable assessment of performance, which could have a lasting impact on academic research of LLMs.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2311.01862v1>$R^3$-NL2GQL: A Hybrid Models Approach for for Accuracy Enhancing and Hallucinations Mitigation (2311.01862v1)</a> </h4>
+<p>
+R3-NL2GQL is a hybrid model approach for NL2GQL tasks, combining the comprehension ability of smaller models with the generalization and generation capabilities of larger models. This approach has the potential to create a lasting impact in academic research, as it can transform natural language queries into any form of GQLs with promising performance and robustness.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2311.02049v1>Post Turing: Mapping the landscape of LLM Evaluation (2311.02049v1)</a> </h4>
+<p>
+This paper traces the evolution of Large Language Models (LLMs) from Alan Turing's foundational questions to modern AI research. It advocates for a unified evaluation system, emphasizing the need for standardization and objective criteria to ensure reliability, fairness, and societal benefit of LLMs. This work calls for the AI community to collaboratively address the challenges of LLM evaluation, with the potential to create a lasting impact in academic research.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2311.01908v1>LLM-driven Multimodal Target Volume Contouring in Radiation Oncology (2311.01908v1)</a> </h4>
+<p>
+This paper presents a novel AI model that combines image and text-based clinical information to accurately contour target volumes for radiation therapy. The model is validated in breast cancer radiation therapy and shows improved performance compared to vision-only AI models, with robust generalization and data-efficiency. This could have a lasting impact in academic research, providing a more accurate and efficient approach to target volume contouring.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2311.01981v1>ProSG: Using Prompt Synthetic Gradients to Alleviate Prompt Forgetting of RNN-like Language Models (2311.01981v1)</a> </h4>
+<p>
+This paper presents a novel technique, ProSG, to alleviate prompt forgetting in RNN-like language models. ProSG hard-codes the prompt into model parameters, allowing the model to store information in a set of fixed-length state vectors. The results of the experiments demonstrate the potential of ProSG to create a lasting impact in academic research, as it can effectively solve the problem of forgetfulness in the process of prompted generation.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2311.01907v1>BoschAI @ PLABA 2023: Leveraging Edit Operations in End-to-End Neural Sentence Simplification (2311.01907v1)</a> </h4>
+<p>
+This paper presents a novel approach to end-to-end neural sentence simplification, leveraging edit operations to improve the accuracy of the simplification process. The proposed techniques have the potential to create a lasting impact in academic research, by providing a more accurate and simpler way to comprehend complex scientific text.</p>
+</div></body></html><body></body></html>
