@@ -1,0 +1,80 @@
+<html><head></head><html><head><style>
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  border: 5px ;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+</style></head><body><div class="intro content">
+<h1>Recent Developments in Machine Learning Research: Potential Breakthroughs and Advancements</h1>
+
+<p>Welcome to our newsletter highlighting the latest developments in machine learning research! In this edition, we will be exploring recent papers that have the potential to make significant breakthroughs in the field. From improving the efficiency and scalability of large language models to enhancing the capabilities of information synthesis, these papers offer exciting possibilities for academic research. We will also delve into the potential impact of using causal inference and structured training for neural networks, as well as the benefits of reducing data redundancy in training multimodal large language models. Additionally, we will take a closer look at a state space model architecture that shows promise for improving video understanding in computer vision research. Join us as we dive into these cutting-edge papers and discover the potential for groundbreaking advancements in machine learning research.</p> </div><div class="content">
+<h4><a href=http://arxiv.org/abs/2403.09636v1>Dynamic Memory Compression: Retrofitting LLMs for Accelerated Inference (2403.09636v1)</a> </h4>
+<p>
+The paper presents a method called Dynamic Memory Compression (DMC) for compressing key-value caches in large language models (LLMs) during inference, resulting in up to ~3.7x increase in throughput. DMC is applied through continued pre-training on a small percentage of the original data without adding extra parameters. It preserves the original downstream performance and can be combined with other techniques for compounded gains. This has the potential to significantly improve the efficiency and scalability of LLMs in academic research.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2403.09599v1>Logical Discrete Graphical Models Must Supplement Large Language Models for Information Synthesis (2403.09599v1)</a> </h4>
+<p>
+The paper discusses the limitations of large language models in information retrieval and argues that they must be supplemented with logical discrete graphical models to overcome challenges such as hallucinations, complex reasoning, planning under uncertainty, and complex calculations. The proposed approach has the potential to significantly enhance the capabilities of information synthesis in academic research.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2403.09635v1>Transformers Get Stable: An End-to-End Signal Propagation Theory for Language Models (2403.09635v1)</a> </h4>
+<p>
+This paper presents a new signal propagation theory for transformer models, which can help mitigate common issues such as vanishing/exploding gradients and instability. The proposed DeepScaleLM technique allows for the training of very deep models with improved performance in various tasks, indicating potential for long-lasting impact in academic research on transformer models.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2403.09539v1>Logits of API-Protected LLMs Leak Proprietary Information (2403.09539v1)</a> </h4>
+<p>
+This paper highlights the potential for significant information leakage from API-protected large language models (LLMs). By exploiting a softmax bottleneck in the models, the authors demonstrate the ability to uncover proprietary information with relatively few API queries. This has implications for the commercialization of LLMs and the need for increased transparency and security measures. The presented techniques have the potential to create a lasting impact in academic research by shedding light on the inner workings of LLMs and their vulnerabilities.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2403.09611v1>MM1: Methods, Analysis & Insights from Multimodal LLM Pre-training (2403.09611v1)</a> </h4>
+<p>
+This paper presents the benefits of building Multimodal Large Language Models (MLLMs) through careful architecture and data choices. By utilizing a mix of image-caption, interleaved image-text, and text-only data, the authors achieved state-of-the-art few-shot results on multiple benchmarks. Additionally, they demonstrate the impact of image encoder design and scaling up the model to 30B parameters. These findings have the potential to greatly impact academic research in multimodal pre-training and improve performance on various benchmarks.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2403.09572v1>Eyes Closed, Safety On: Protecting Multimodal LLMs via Image-to-Text Transformation (2403.09572v1)</a> </h4>
+<p>
+The paper presents a novel approach, ECSO, for protecting multimodal large language models (MLLMs) from jailbreak attacks. By adaptively transforming unsafe images into texts, ECSO enhances model safety significantly while maintaining utility results on common MLLM benchmarks. It also has the potential to generate supervised-finetuning data for MLLM alignment without extra human intervention. This technique has the potential to create a lasting impact in academic research by improving the robustness and safety of MLLMs.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2403.09606v1>Large Language Models and Causal Inference in Collaboration: A Comprehensive Survey (2403.09606v1)</a> </h4>
+<p>
+This paper discusses the potential impact of using causal inference in collaboration with Large Language Models (LLMs) in academic research. The authors highlight the benefits of this approach, such as improved predictive accuracy, fairness, and explainability of NLP models. They also explore how LLMs can contribute to the field of causal inference, ultimately leading to the development of more advanced and equitable artificial intelligence systems.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2403.09613v1>Reawakening knowledge: Anticipatory recovery from catastrophic interference via structured training (2403.09613v1)</a> </h4>
+<p>
+This paper discusses the potential benefits of using structured training for neural networks in academic research. By presenting documents in a fixed, repeated sequence, the networks exhibit anticipatory behavior and recover from catastrophic interference. This behavior becomes more robust as the network's architecture scales up, providing new insights into training over-parameterized networks in structured environments.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2403.09559v1>Less is More: Data Value Estimation for Visual Instruction Tuning (2403.09559v1)</a> </h4>
+<p>
+The paper "Less is More: Data Value Estimation for Visual Instruction Tuning" explores the potential for reducing the amount of data used in training multimodal large language models (MLLMs) for vision scenarios. Through empirical studies, the authors demonstrate that a significant amount of data redundancy exists within visual instruction datasets. They propose a new data selection approach, TIVE, which uses estimated task and instance values to select a smaller subset of data for training. Results show that this approach can achieve comparable performance to using the full dataset, with potential for even better performance.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2403.09626v1>Video Mamba Suite: State Space Model as a Versatile Alternative for Video Understanding (2403.09626v1)</a> </h4>
+<p>
+The paper presents the Video Mamba Suite, a state space model architecture that shows potential for improving video understanding in computer vision research. Through comprehensive studies and experiments, the authors demonstrate the versatility and efficiency of Mamba in various video understanding tasks. The open-source code for the suite provides valuable resources for future research in this area.</p>
+</div></body></html><body></body></html>
