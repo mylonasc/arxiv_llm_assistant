@@ -1,0 +1,80 @@
+<html><head></head><html><head><style>
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  border: 5px ;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+</style></head><body><div class="intro content">
+<h1>Recent Developments in Machine Learning Research: Potential Breakthroughs and Impactful Techniques</h1>
+
+<p>Welcome to our newsletter, where we bring you the latest developments in machine learning research. In this edition, we will be highlighting some exciting papers that have the potential to make a lasting impact in the field. From efficient and accurate long-sequence modeling to improving performance for low-resource languages, these papers showcase innovative techniques and approaches that could lead to breakthroughs in machine learning. Join us as we dive into the world of multimodal learning, query optimization, graph neural networks, debiasing large language models, visual data generation, automatic summarization, and graph representation learning. Get ready to be inspired and stay ahead of the curve with these cutting-edge advancements in machine learning research.</p> </div><div class="content">
+<h4><a href=http://arxiv.org/abs/2403.13600v1>VL-Mamba: Exploring State Space Models for Multimodal Learning (2403.13600v1)</a> </h4>
+<p>
+VL-Mamba is a multimodal large language model that utilizes state space models for efficient and accurate long-sequence modeling. By replacing the transformer-based backbone language model with the pre-trained Mamba language model, VL-Mamba shows promising results in multimodal learning tasks. This technique has the potential to significantly impact academic research in the field of multimodal learning by providing a more efficient and effective approach.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2403.13737v1>EthioLLM: Multilingual Large Language Models for Ethiopian Languages with Task Evaluation (2403.13737v1)</a> </h4>
+<p>
+The paper presents EthioLLM, a set of multilingual large language models for five Ethiopian languages and English, along with a new benchmark dataset for downstream NLP tasks. The authors discuss the potential impact of these resources in improving the performance of NLP tasks for low-resource languages and make their models and dataset publicly available. This could have a lasting impact on academic research in the field of NLP for Ethiopian languages.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2403.13597v1>No more optimization rules: LLM-enabled policy-based multi-modal query optimizer (version 1) (2403.13597v1)</a> </h4>
+<p>
+This paper presents a novel approach, called LaPuda, for multi-modal query optimization using large language models (LLM) and policy-based techniques. By utilizing LLM's query planning capabilities and implementing a guided cost descent algorithm, LaPuda outperforms traditional rule-based and cost-based optimizers in terms of execution speed. This has the potential to greatly impact academic research in the field of query optimization, as it offers a more efficient and effective approach that saves time and human effort.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2403.13781v1>Sparse Implementation of Versatile Graph-Informed Layers (2403.13781v1)</a> </h4>
+<p>
+This paper introduces a sparse implementation of Graph-Informed (GI) layers, which are used in Graph Neural Networks (GNNs) for learning tasks on graph-structured data. The proposed implementation improves efficiency and scalability, allowing for the creation of deeper Graph-Informed Neural Networks (GINNs) and their application to larger graphs. This has the potential to greatly impact academic research by expanding the capabilities and applicability of GNNs.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2403.13799v1>Reverse Training to Nurse the Reversal Curse (2403.13799v1)</a> </h4>
+<p>
+This paper presents a potential solution to the Reversal Curse, a failure of large language models to generalize to reversed statements. The proposed technique, reverse training, involves training the model in both forward and reverse directions using doubled tokens. Results show improved performance on standard tasks and a resolution of the reversal curse issue, suggesting a lasting impact on academic research in this area.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2403.13590v1>Teacher-Student Training for Debiasing: General Permutation Debiasing for Large Language Models (2403.13590v1)</a> </h4>
+<p>
+This paper presents a teacher-student training method for debiasing large language models (LLMs) in NLP tasks. By distilling the capabilities of a computationally intensive, debiased teacher model into a more compact student model, the authors aim to improve performance and reliability while reducing computational cost at inference. Their approach is general and can be applied to both black-box and white-box LLMs, and has the potential to significantly impact academic research by achieving better results with fewer parameters.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2403.13802v1>ZigMa: Zigzag Mamba Diffusion Model (2403.13802v1)</a> </h4>
+<p>
+The paper presents a new diffusion model, Zigzag Mamba, which addresses scalability and complexity issues in transformer-based structures for visual data generation. By incorporating spatial continuity and utilizing the Stochastic Interpolant framework, Zigzag Mamba outperforms existing methods and shows potential for scalability on large-resolution datasets. This technique has the potential to make a lasting impact in academic research by improving speed and memory utilization in visual data generation.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2403.13780v1>Information-Theoretic Distillation for Reference-less Summarization (2403.13780v1)</a> </h4>
+<p>
+The paper presents a novel framework, InfoSumm, for distilling a powerful summarizer without relying on large-scale language models or human-written references. By optimizing for information-centric measures, the proposed method achieves competitive results with only 568M parameters, outperforming in-domain supervised models and state-of-the-art unsupervised methods. This approach has the potential to create a lasting impact in academic research by providing a more cost-efficient and controllable alternative to current methods of automatic summarization.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2403.13638v1>Do Not Worry if You Do Not Have Data: Building Pretrained Language Models Using Translationese (2403.13638v1)</a> </h4>
+<p>
+This paper explores the use of synthetic data, specifically \textit{Translationese}, for pre-training language models (LMs) in languages other than English. The authors demonstrate that LMs trained on this synthetic data perform only slightly worse than those trained on clean data, and propose the use of lightweight \textit{TinyLMs} to filter the synthetic data and improve performance. They also release a large collection of monolingual document-level corpora, \textit{IndicMonoDoc}, to aid in improving non-English performance for LMs. This approach has the potential to significantly impact academic research by addressing data scarcity in non-English languages and improving the performance of LMs in these languages.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2403.13749v1>Weisfeiler and Leman Go Loopy: A New Hierarchy for Graph Representational Learning (2403.13749v1)</a> </h4>
+<p>
+The paper presents a new hierarchy for graph representational learning, called $r$-$\ell{}$WL, which can count cycles up to length $r + 2$. This extends the capabilities of classical 1-WL and has shown to have state-of-the-art predictive performance on real-world datasets. The potential for this technique to count homomorphisms of cactus graphs could have a lasting impact on academic research in graph representation learning.</p>
+</div></body></html><body></body></html>
