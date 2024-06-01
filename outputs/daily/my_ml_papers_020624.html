@@ -1,0 +1,80 @@
+<html><head></head><html><head><style>
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  border: 5px ;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+</style></head><body><div class="intro content">
+<h1>Recent Developments in Machine Learning Research: Potential Breakthroughs and Exciting Discoveries</h1>
+
+<p>Welcome to our latest newsletter, where we bring you the most recent and groundbreaking developments in the world of machine learning research. In this edition, we will be focusing on potential breakthroughs that have the potential to greatly impact academic research in this field. From efficient deployment of Large Language Models (LLMs) to self-improving LLM agents, we have a diverse range of papers that showcase the cutting-edge advancements in this rapidly evolving field.</p> </div><div class="content">
+<h4><a href=http://arxiv.org/abs/2405.20202v1>One QuantLLM for ALL: Fine-tuning Quantized LLMs Once for Efficient Deployments (2405.20202v1)</a> </h4>
+<p>
+This paper presents a new approach for efficiently deploying Large Language Models (LLMs) by training a once-for-all (OFA) supernet that can generate optimal subnets for different applications. The proposed technique addresses the challenges of lengthy training and interference from weight sharing in current methods. By incorporating Low-Rank adapters and a non-parametric scheduler, the approach achieves high performance while significantly reducing deployment time for diverse scenarios. This has the potential to greatly impact academic research in the field of LLMs by providing a more efficient and effective method for deploying these models.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2405.20339v1>Visual Perception by Large Language Model's Weights (2405.20339v1)</a> </h4>
+<p>
+This paper presents a novel approach for incorporating visual information into Large Language Models (LLMs) by aligning visual features with model weights instead of input space alignment. This method, called VLoRA, significantly reduces computational costs for both training and inference while achieving comparable performance on various benchmarks for Multimodal Large Language Models (MLLMs). The open-source code and models have the potential to greatly impact academic research in this field.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2405.20247v1>KerasCV and KerasNLP: Vision and Language Power-Ups (2405.20247v1)</a> </h4>
+<p>
+The paper introduces KerasCV and KerasNLP, domain packages that extend the Keras API for Computer Vision and Natural Language Processing workflows. These packages offer fast experimentation, ease-of-use, and high performance, with a modular and layered design. They also provide pretrained "task" models for popular architectures, allowing for efficient training and fine-tuning. The open-source libraries have the potential to greatly enhance and streamline academic research in these fields.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2405.20192v1>TAIA: Large Language Models are Out-of-Distribution Data Learners (2405.20192v1)</a> </h4>
+<p>
+The paper presents a new method, called TAIA, for improving the performance of large language models (LLMs) in data-scarce domains with domain-mismatched data. By re-evaluating the Transformer architecture, the authors discovered that only fine-tuned attention parameters are particularly beneficial in these scenarios. Their proposed method, \trainallInfAttn, achieves superior improvements compared to traditional fine-tuning methods, making it resistant to jailbreaking tuning and enhancing specialized tasks using general data. This has the potential to greatly impact academic research by providing a more effective and efficient way to improve LLM performance in data-scarce domains.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2405.20180v1>Transformers and Slot Encoding for Sample Efficient Physical World Modelling (2405.20180v1)</a> </h4>
+<p>
+This paper presents a new architecture that combines Transformers and slot-attention for world modelling from video input. The proposed approach shows promising results in terms of sample efficiency and performance consistency, addressing limitations of existing methods. The availability of the code for this architecture and experiments suggests potential for lasting impact in the field of physical world modelling in academic research.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2405.20194v1>Occam Gradient Descent (2405.20194v1)</a> </h4>
+<p>
+The paper presents Occam Gradient Descent, an algorithm that balances the competing demands of deep learning models by simultaneously reducing model size and minimizing fitting error. This approach is more efficient in terms of computing resources and training data compared to traditional gradient descent, and has shown promising results in terms of accuracy, compute, and model compression. This technique has the potential to significantly impact academic research in deep learning by improving the efficiency and effectiveness of training models.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2405.20145v1>Heidelberg-Boston @ SIGTYP 2024 Shared Task: Enhancing Low-Resource Language Analysis With Character-Aware Hierarchical Transformers (2405.20145v1)</a> </h4>
+<p>
+This paper presents a submission to the SIGTYP 2024 shared task, focusing on enhancing low-resource language analysis for historical languages. By utilizing character-aware hierarchical transformers and character-level T5 models, the authors were able to achieve first place in the constrained subtask and demonstrate the potential for these techniques to improve research in this field.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2405.20309v1>Large Language Models Can Self-Improve At Web Agent Tasks (2405.20309v1)</a> </h4>
+<p>
+This paper explores the potential for large language models (LLMs) to self-improve their performance as agents in complex environments, specifically in the WebArena benchmark. By fine-tuning on synthetic training data, the LLMs were able to achieve a 31% improvement in task completion rate. This research also introduces new evaluation metrics for assessing the quality and capabilities of the fine-tuned LLM agents. These findings have the potential to greatly impact academic research in the use of LLMs for agent tasks in various environments.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2405.20215v1>TS-Align: A Teacher-Student Collaborative Framework for Scalable Iterative Finetuning of Large Language Models (2405.20215v1)</a> </h4>
+<p>
+The paper presents a new framework, TS-Align, for aligning large language models (LLMs) that reduces the reliance on costly human preference data. Through the collaboration between a large-scale teacher model and a small-scale student model, the framework automatically mines pairwise feedback data to fine-tune the policy model. The experiments show that the final aligned policy outperforms the base model, demonstrating the potential for this technique to have a lasting impact in academic research on LLM alignment.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2405.20335v1>Xwin-LM: Strong and Scalable Alignment Practice for LLMs (2405.20335v1)</a> </h4>
+<p>
+Xwin-LM is a suite of alignment techniques for large language models (LLMs) that includes supervised finetuning, reward modeling, rejection sampling finetuning, and direct preference optimization. These techniques have the potential to significantly improve the performance of LLMs in academic research, as demonstrated by consistent and significant improvements in evaluations on AlpacaEval and MT-bench. The open-source repository for Xwin-LM will continue to support community research in this area.</p>
+</div></body></html><body></body></html>
