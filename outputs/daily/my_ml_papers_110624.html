@@ -1,0 +1,80 @@
+<html><head></head><html><head><style>
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  border: 5px ;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+</style></head><body><div class="intro content">
+<h1>Recent Developments in Machine Learning Research: Potential Breakthroughs and Impact</h1>
+
+<p>Welcome to our latest newsletter, where we bring you the most exciting recent developments in machine learning research. In this edition, we will be focusing on potential breakthroughs that have the potential to make a lasting impact in academic research. From new techniques for fine-tuning large language models to novel approaches for graph generation and time series forecasting, these papers showcase the cutting-edge advancements in the field of machine learning. Get ready to dive into the world of LGGMs, MEFT, PEFT, SpanGNN, MRAG, CPRNN, SeTokim, BRAINTEASER, UniTST, and LLMs as we explore their potential to revolutionize the way we approach complex tasks and challenges. Let's take a closer look at these papers and see how they could shape the future of machine learning research.</p> </div><div class="content">
+<h4><a href=http://arxiv.org/abs/2406.05109v1>Large Generative Graph Models (2406.05109v1)</a> </h4>
+<p>
+The paper presents a new class of graph generative models, called Large Graph Generative Models (LGGMs), that are trained on a large corpus of graphs from 13 different domains. The pre-trained LGGMs demonstrate superior zero-shot generative capability and can be easily fine-tuned for specific domains. Additionally, the LGGMs have the capability to generate graphs based on text prompts, providing users with fine-grained control. This has the potential to greatly impact academic research in graph generation by allowing for more diverse and customizable models.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2406.04984v1>MEFT: Memory-Efficient Fine-Tuning through Sparse Adapter (2406.04984v1)</a> </h4>
+<p>
+The paper presents a new technique, MEFT, for fine-tuning Large Language Models (LLMs) under limited resources. By leveraging the inherent activation sparsity in LLMs and utilizing the larger capacity of CPU memory, MEFT allows for the use of larger adapters without sacrificing memory efficiency. This has the potential to greatly improve the performance of LLMs on complex, knowledge-intensive tasks, making a lasting impact in academic research.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2406.05130v1>An Empirical Study on Parameter-Efficient Fine-Tuning for MultiModal Large Language Models (2406.05130v1)</a> </h4>
+<p>
+This paper explores the potential for parameter-efficient fine-tuning (PEFT) methods to enhance the performance of multimodal large language models (MLLMs) in scenarios where only a limited number of parameters are trained. Through empirical studies, the authors demonstrate that PEFT methods, particularly the adapter and fine-tuning of connector layers, can significantly improve MLLM performance on both seen and unseen datasets. This research has the potential to create a lasting impact in academic research by providing effective methods for enhancing MLLM performance while reducing the computational burden of fine-tuning all parameters.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2406.04938v1>SpanGNN: Towards Memory-Efficient Graph Neural Networks via Spanning Subgraph Training (2406.04938v1)</a> </h4>
+<p>
+The paper presents SpanGNN, a new memory-efficient training method for Graph Neural Networks (GNNs). By training GNN models over a sequence of spanning subgraphs, SpanGNN reduces peak memory usage and maintains model accuracy. This technique has the potential to significantly impact academic research by allowing for more efficient and accurate training of GNNs on large graph datasets.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2406.05085v1>Multi-Head RAG: Solving Multi-Aspect Problems with LLMs (2406.05085v1)</a> </h4>
+<p>
+The paper "Multi-Head RAG: Solving Multi-Aspect Problems with LLMs" introduces a new approach, Multi-Head RAG (MRAG), to enhance the abilities of Large Language Models (LLMs) in retrieving multiple documents with different contents. By leveraging activations of Transformer's multi-head attention layer, MRAG improves retrieval accuracy for complex queries and shows potential for up to 20% improvement in relevance over standard RAG baselines. This technique has the potential to create a lasting impact in academic research by improving the capabilities of LLMs in handling multi-aspect problems.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2406.05045v1>A Tensor Decomposition Perspective on Second-order RNNs (2406.05045v1)</a> </h4>
+<p>
+The paper explores the potential of using tensor decomposition to reduce the parameter count in Second-order Recurrent Neural Networks (2RNNs). By studying the resulting model, called CPRNN, the authors show that it can outperform traditional RNNs, 2RNNs, and MIRNNs with the right choice of rank and hidden size. This technique has the potential to significantly improve the performance of sequence modelling in academic research.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2406.05127v1>Towards Semantic Equivalence of Tokenization in Multimodal LLM (2406.05127v1)</a> </h4>
+<p>
+The paper presents a novel dynamic Semantic-Equivalent Vision Tokenizer (SeTok) for Multimodal Large Language Models (MLLMs) that effectively preserves semantic integrity and captures both low-frequency and high-frequency visual features. The proposed MLLM (Setokim) equipped with SeTok demonstrates superior performance across various tasks, indicating potential for lasting impact in academic research on vision-language processing.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2406.04947v1>BAMO at SemEval-2024 Task 9: BRAINTEASER: A Novel Task Defying Common Sense (2406.04947v1)</a> </h4>
+<p>
+This paper presents a novel task, BRAINTEASER, which challenges language models to think creatively and outside of the box. The authors utilize a combination of fine-tuning, zero-shot prompting, and a consensus approach to achieve an 85% accuracy on the task. These techniques have the potential to greatly impact academic research in the field of language models and their ability to think creatively.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2406.04975v1>UniTST: Effectively Modeling Inter-Series and Intra-Series Dependencies for Multivariate Time Series Forecasting (2406.04975v1)</a> </h4>
+<p>
+The paper presents a new transformer-based model, UniTST, for multivariate time series forecasting. Unlike existing models, UniTST effectively captures both inter-series and intra-series dependencies, which are crucial in real-world data. The model's simple architecture and strong performance in experiments suggest its potential to have a lasting impact in academic research on time series forecasting techniques.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2406.05063v1>Are Large Language Models More Empathetic than Humans? (2406.05063v1)</a> </h4>
+<p>
+This paper presents a study comparing the empathetic responding capabilities of four large language models (LLMs) to humans. The results show that LLMs, particularly GPT-4, outperform humans in responding to a wide range of emotions. This study provides a framework for evaluating the empathy of new LLMs, which could have a lasting impact on future research in this area.</p>
+</div></body></html><body></body></html>
