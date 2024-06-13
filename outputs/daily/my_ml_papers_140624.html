@@ -1,0 +1,80 @@
+<html><head></head><html><head><style>
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  border: 5px ;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+</style></head><body><div class="intro content">
+<h1>Recent Developments in Machine Learning Research: Potential Breakthroughs and Advancements</h1>
+
+<p>Welcome to our latest newsletter, where we bring you the most exciting and promising developments in the world of machine learning research. In this edition, we will explore the potential of compute-in-memory architectures to accelerate large language model inference, the creation of a comprehensive benchmark for graph foundation models, and a new training system for large language models that promises to democratize billion-scale model training. We will also discuss the importance of understanding the limitations of large language models and a standardized approach for evaluating them. Additionally, we will delve into novel methods for preference optimization, multimodal large language models, and sequence modeling. And finally, we will explore a new approach to improving the computational efficiency of graph neural networks. These recent advancements have the potential to revolutionize the field of machine learning and have a lasting impact on academic research. Let's dive in!</p> </div><div class="content">
+<h4><a href=http://arxiv.org/abs/2406.08413v1>Memory Is All You Need: An Overview of Compute-in-Memory Architectures for Accelerating Large Language Model Inference (2406.08413v1)</a> </h4>
+<p>
+This paper discusses the potential of compute-in-memory (CIM) architectures to accelerate large language model (LLM) inference, which is crucial for the advancement of natural language processing. With LLMs exceeding the capacity of single GPUs and the limitations of Moore's law, CIM offers a promising solution by reducing latency and power consumption through direct analog computations in memory. The paper provides an overview and analysis of transformer-based models and their hardware acceleration schemes, highlighting the potential for CIM to address the challenges of modern AI computing systems.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2406.08310v1>GraphFM: A Comprehensive Benchmark for Graph Foundation Model (2406.08310v1)</a> </h4>
+<p>
+The paper presents GraphFM, a comprehensive benchmark for Graph Foundation Models (FMs) that addresses key issues in self-supervised learning for FMs. Through rigorous analysis and comparison of various self-supervised Graph Neural Network (GNN) models, the benchmark aims to provide insights for future research in terms of generalization, scalability, and efficiency. The publicly available code for this benchmark has the potential to create a lasting impact in academic research on FMs and self-supervised learning techniques.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2406.08334v1>ProTrain: Efficient LLM Training via Memory-Aware Techniques (2406.08334v1)</a> </h4>
+<p>
+ProTrain is a new training system that intelligently manages memory usage and performance for training Large Language Models (LLM). It achieves this through adaptive memory management techniques and a Memory-Aware Runtime Profiler, without compromising accuracy. Experiments show that ProTrain can significantly improve training throughput compared to existing systems, making it a promising tool for democratizing billion-scale model training and potentially having a lasting impact on academic research in this field.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2406.08391v1>Large Language Models Must Be Taught to Know What They Don't Know (2406.08391v1)</a> </h4>
+<p>
+This paper discusses the importance of understanding the limitations of large language models (LLMs) and proposes a method for creating accurate uncertainty estimates with minimal computational cost. The authors demonstrate that training LLMs on a small dataset of correct and incorrect answers can improve their performance and make them reliable uncertainty estimators for not only their own predictions, but also for other models. This has the potential to greatly impact the use of LLMs in high-stakes applications and human-AI collaborative settings in academic research.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2406.08446v1>OLMES: A Standard for Language Model Evaluations (2406.08446v1)</a> </h4>
+<p>
+The paper presents OLMES, a standardized approach for evaluating language models in AI research. This standard aims to address the challenges of inconsistent evaluation practices and lack of reproducibility in comparing model performance. By providing a well-documented and practical framework, OLMES has the potential to create a lasting impact in academic research by enabling meaningful comparisons between different models and promoting more reliable and transparent evaluations.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2406.08414v1>Discovering Preference Optimization Algorithms with and for Large Language Models (2406.08414v1)</a> </h4>
+<p>
+This paper presents a novel approach to preference optimization for Large Language Models (LLMs) by using LLM-driven objective discovery to automatically generate new loss functions. This method, called DiscoPOP, has been shown to outperform traditional supervised learning methods and can be successfully applied to various tasks. This has the potential to greatly impact academic research by expanding the possibilities for preference optimization in LLMs.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2406.08394v1>VisionLLM v2: An End-to-End Generalist Multimodal Large Language Model for Hundreds of Vision-Language Tasks (2406.08394v1)</a> </h4>
+<p>
+VisionLLM v2 is a powerful end-to-end generalist multimodal large language model that combines visual perception, understanding, and generation in one framework. It introduces a new information transmission mechanism called "super link" to connect the model with task-specific decoders, allowing for flexible training and effective resolution of conflicts. With training data from hundreds of vision and vision-language tasks, this model can be joint-trained and generalize to various tasks, potentially revolutionizing the generalization of MLLMs in academic research.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2406.08477v1>Improving LLMs for Recommendation with Out-Of-Vocabulary Tokens (2406.08477v1)</a> </h4>
+<p>
+This paper explores the use of out-of-vocabulary (OOV) tokens in Large Language Models (LLMs) for recommendation systems. By clustering user-item interactions and incorporating OOV tokens into the LLM's vocabulary, the proposed framework improves the ability to distinguish between users and items and capture their relationships. This has the potential to significantly enhance the performance of LLM-based recommender systems in various downstream tasks, making a lasting impact in academic research.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2406.08423v1>State Soup: In-Context Skill Learning, Retrieval and Mixing (2406.08423v1)</a> </h4>
+<p>
+The paper presents a new approach to sequence modeling using gated-linear recurrent neural networks. By treating internal states as task vectors, the model can efficiently store, retrieve, and combine information, leading to improved performance on both next-token prediction and downstream in-context learning tasks. This technique has the potential to significantly impact academic research in the field of sequence modeling.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2406.08287v1>Pre-Training Identification of Graph Winning Tickets in Adaptive Spatial-Temporal Graph Neural Networks (2406.08287v1)</a> </h4>
+<p>
+This paper introduces a novel method, Graph Winning Tickets (GWT), to improve the computational efficiency of Adaptive Spatial-Temporal Graph Neural Networks (ASTGNNs). By adopting a pre-determined star topology, the GWT approach reduces computational demands while maintaining high model performance. This advancement not only proves the existence of efficient sub-networks within ASTGNNs, but also broadens the applicability of the Lottery Ticket Hypothesis in resource-constrained settings, making a lasting impact in the field of graph neural networks.</p>
+</div></body></html><body></body></html>
