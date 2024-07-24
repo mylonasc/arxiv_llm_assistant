@@ -1,0 +1,80 @@
+<html><head></head><html><head><style>
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  border: 5px ;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+</style></head><body><div class="intro content">
+<h1>Recent Developments in Machine Learning Research: Potential Breakthroughs and Exciting Findings</h1>
+
+<p>Welcome to our latest newsletter, where we bring you the most recent and exciting developments in the world of machine learning research. In this edition, we will be highlighting some groundbreaking studies that have the potential to greatly impact and improve academic research in this field. From utilizing small language models for medical paraphrase generation to improving large language models' ability to perform course-correction, these papers offer valuable insights and techniques that could pave the way for future breakthroughs. So, let's dive in and explore the potential of these cutting-edge research findings!</p> </div><div class="content">
+<h4><a href=http://arxiv.org/abs/2407.16565v1>Retrieve, Generate, Evaluate: A Case Study for Medical Paraphrases Generation with Small Language Models (2407.16565v1)</a> </h4>
+<p>
+This paper presents a case study on the potential benefits of using small language models (SLMs) for medical paraphrase generation. The authors introduce a pipeline, pRAGe, which utilizes retrieval augmented generation and external knowledge bases to address the challenges of hallucination and computational resources posed by large language models. The study focuses on the effectiveness of SLMs and the impact of external knowledge bases in French medical paraphrase generation. These techniques have the potential to greatly impact and improve academic research in this field.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2407.16674v1>KAN or MLP: A Fairer Comparison (2407.16674v1)</a> </h4>
+<p>
+This paper compares the performance of KAN and MLP models in various tasks, controlling for the number of parameters and FLOPs. It finds that MLP generally outperforms KAN, except for symbolic formula representation tasks where KAN's B-spline activation function gives it an advantage. However, when B-spline is applied to MLP, its performance in symbolic formula representation improves significantly. The paper also highlights KAN's forgetting issue in a continual learning setting. These findings provide valuable insights for future research on KAN and other MLP alternatives.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2407.16615v1>Lawma: The Power of Specialization for Legal Tasks (2407.16615v1)</a> </h4>
+<p>
+This paper explores the potential benefits of using large language models, specifically Llama 3, for legal tasks such as annotation and classification. Through a comprehensive study of 260 legal text classification tasks, the authors demonstrate that fine-tuning Llama 3 can significantly outperform the commonly used GPT-4 model. This suggests that utilizing open-source models may be a more effective and cost-efficient approach for legal research.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2407.16574v1>TLCR: Token-Level Continuous Reward for Fine-grained Reinforcement Learning from Human Feedback (2407.16574v1)</a> </h4>
+<p>
+The paper presents a new technique, TLCR, for fine-grained reinforcement learning from human feedback. This approach addresses the limitation of previous methods by providing token-level continuous rewards, which better capture the varying degrees of preference for each token. The results of extensive experiments show consistent performance improvements, indicating the potential for lasting impact in academic research on open-ended generation benchmarks.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2407.16637v1>Course-Correction: Safety Alignment Using Synthetic Preferences (2407.16637v1)</a> </h4>
+<p>
+This paper presents a systematic study on improving large language models' (LLMs) ability to perform course-correction, or steering away from generating harmful content. The authors introduce a benchmark and propose a method of fine-tuning LLMs with preference learning to teach them the concept of timely course-correction. Results show that this technique effectively enhances course-correction skills and improves LLMs' safety, potentially creating a lasting impact in academic research on LLMs.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2407.16526v1>Imperfect Vision Encoders: Efficient and Robust Tuning for Vision-Language Models (2407.16526v1)</a> </h4>
+<p>
+The paper presents a new method for updating vision encoders in vision language models (VLMs) that improves performance and robustness. This approach has the potential to significantly impact academic research in the field of VLMs, as it addresses existing errors and allows for continual few-shot updates. The method is theoretically grounded, generalizable, and computationally efficient, making it a valuable contribution to the field.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2407.16604v1>Shared Imagination: LLMs Hallucinate Alike (2407.16604v1)</a> </h4>
+<p>
+This paper explores the similarity among large language models (LLMs) by proposing a novel setting called imaginary question answering (IQA). By asking LLMs to generate and answer purely imaginary questions, the study reveals a shared imagination space in which these models operate during hallucinations. This has implications for model homogeneity, hallucination, and computational creativity, potentially leading to lasting impacts in academic research on these techniques.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2407.16557v1>Patched RTC: evaluating LLMs for diverse software development tasks (2407.16557v1)</a> </h4>
+<p>
+This paper presents Patched Round-Trip Correctness (Patched RTC), a new evaluation technique for Large Language Models (LLMs) applied to diverse software development tasks. It offers a self-evaluating framework that measures consistency and robustness of model responses without human intervention. The study shows that Patched RTC can effectively distinguish model performance and task difficulty, making it a potential alternative to the LLM-as-Judge paradigm for open-domain task evaluation. This has the potential to greatly impact academic research in the field of LLMs and their application in software development tasks.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2407.16695v1>Stress-Testing Long-Context Language Models with Lifelong ICL and Task Haystack (2407.16695v1)</a> </h4>
+<p>
+The paper introduces Lifelong ICL, a problem setting that challenges long-context language models (LMs) to learn from a sequence of tasks through in-context learning (ICL). It also presents Task Haystack, an evaluation suite that assesses how well long-context LMs utilize contexts in Lifelong ICL. The results of benchmarking 12 long-context LMs using Task Haystack show that current models still struggle in this setting, highlighting the need for further research and development in this area.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2407.16552v1>MicroEmo: Time-Sensitive Multimodal Emotion Recognition with Micro-Expression Dynamics in Video Dialogues (2407.16552v1)</a> </h4>
+<p>
+MicroEmo is a time-sensitive multimodal emotion recognition model that focuses on capturing local facial features and contextual dependencies in video dialogues. Its global-local attention visual encoder and utterance-aware video Q-Former make it effective in predicting emotions in an open-vocabulary manner. This technique has the potential to greatly improve emotion recognition in academic research, especially in the emerging field of Explainable Multimodal Emotion Recognition.</p>
+</div></body></html><body></body></html>
