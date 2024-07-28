@@ -4,6 +4,7 @@
 
 import datetime
 from bs4 import BeautifulSoup
+import logging
 today = datetime.datetime.today()
 
 KEYWORDS='large language models,efficient, transformers, graph neural networks, qlora'
@@ -17,8 +18,17 @@ from arxivhero import _get_document_last_days_arxiv
 
 if __name__=='__main__':
 
+    logging.basicConfig(
+        level = logging.INFO,
+        format = "%(asctime)s | %(levelname)s %(message)s" ,
+        filename='arxiv_hero.log'
+    )
+
+
     # Make the document:
+    logging.info("Getting the documents from arxiv and making summaries")
     doc = _get_document_last_days_arxiv(KEYWORDS.split(','), q_topic_thresh=Q_TOPICS, top_n_relevant=TOP_N)
+    logging.info("Finished making the summaries")
 
     s = '<html>'
     s += '<head>'

@@ -3,6 +3,7 @@ from src.arxiv_hero import ArxivCustomRetrieval, TFIDFNMFTopicModeler, DocGenera
 from src.arxiv_hero import FlatDomainOntology, SummaryFocus
 from typing import List
 import argparse
+import logging
 
 
 parser = argparse.ArgumentParser('Create a webpage containing a digest of recent arxiv papers according to some keywords.')
@@ -16,6 +17,12 @@ parser.add_argument('--out', type=str, help = 'output file (HTML doc)')
 # interests_query = "llm chatgpt efficient inference"
 def _get_document_last_days_arxiv(keywords : List[str], q_topic_thresh = 0.9 , top_n_relevant = 5):
     interests_query = ','.join(keywords) # 'finance china interest rates oil'
+    logging.basicConfig(
+        level = logging.INFO,
+        format = "%(asctime)s | %(levelname)s %(message)s" ,
+        filename='arxiv_hero.log'
+    )
+    logging.info("- running querry with interests query: " + interests_query)
     ranked_search_results = ArxivCustomRetrieval(
             topic_modeler=TFIDFNMFTopicModeler(), 
             q_topic_thresh_val=q_topic_thresh,
@@ -24,11 +31,16 @@ def _get_document_last_days_arxiv(keywords : List[str], q_topic_thresh = 0.9 , t
 
     ranked_search_results.run(interests_query)
 
-    d = DocGenerationEngine(
-        ranked_search_results,
-        doc_ontology_text=FlatDomainOntology.ML_RESEARCH_NEWS_DOC_ONTOLOGY,
-        summary_focus=SummaryFocus.ACADEMIC_RESEARCH
-    )
+    logging.info("- running the LLM-based doc generation engine")
+    try:
+        d = DocGenerationEngine(
+          ranked_search_results,
+          doc_ontology_text=FlatDomainOntology.ML_RESEARCH_NEWS_DOC_ONTOLOGY,
+          summary_focus=SummaryFocus.ACADEMIC_RESEARCH
+        )
+        logging.info("  doc generation ok")
+    except:
+        logging.error(" - doc generation failed!")
     return d.make_document()
 
 

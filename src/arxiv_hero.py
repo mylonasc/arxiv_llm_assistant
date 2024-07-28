@@ -16,15 +16,25 @@ sys.path.append('..')
 
 ## Special for this notebook - depends on relative paths:
 def _get_helper_css_js():
-    css = open('src/assets/style.css','r').read()
-    js = open('src/assets/script.js','r').read()
+    assert('ARXIV_HERO_HOME' in os.environ.keys())
+    if 'ARXIV_HERO_HOME' in os.environ.keys():
+        arxiv_hero_home = os.environ['ARXIV_HERO_HOME']
+        assert(os.path.exists(arxiv_hero_home))
+        assets_path = os.path.join(arxiv_hero_home, 'src/assets')
+    else:
+        assets_path = 'src/assets'
+    css = open(os.path.join(assets_path, 'style.css'),'r').read()
+    js = open(os.path.join(assets_path, 'script.js'),'r').read()
     return css, js
 
 def _get_openai_api_key():
     if 'OPENAI_API_KEY' in os.environ:
         openai_api_key = os.environ['OPENAI_API_KEY']
         return openai_api_key
-    openai_api_key = open('../secret_openai_api_key.txt','r').read()[:-1]
+    try:
+        openai_api_key = open('../secret_openai_api_key.txt','r').read()[:-1]
+    except: 
+        openai_api_key = open('secret_openai_api_key.txt','r').read()[:-1]
     return openai_api_key
 
 openai_api_key = _get_openai_api_key()
