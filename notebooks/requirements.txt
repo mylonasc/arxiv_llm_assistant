@@ -4,5 +4,9 @@ langchain
 openai
 sentence-transformers
 transformers
-sklearn
+scikit-learn
 numpy
+sentencepiece
+soundfile
+datasets
+matplotlib

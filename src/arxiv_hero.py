@@ -8,7 +8,9 @@ from sentence_transformers.util import cos_sim
 from scipy.sparse._csr import csr_matrix
 from typing import List, Dict, Tuple
 from abc import ABC
-from langchain import PromptTemplate, OpenAI, LLMChain
+from langchain import LLMChain
+from langchain_community.llms.openai import OpenAI
+from langchain.prompts import PromptTemplate
 import enum 
 
 import sys

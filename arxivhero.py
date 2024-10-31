@@ -32,15 +32,16 @@ def _get_document_last_days_arxiv(keywords : List[str], q_topic_thresh = 0.9 , t
     ranked_search_results.run(interests_query)
 
     logging.info("- running the LLM-based doc generation engine")
-    try:
+    #try:
+    if True:
         d = DocGenerationEngine(
           ranked_search_results,
           doc_ontology_text=FlatDomainOntology.ML_RESEARCH_NEWS_DOC_ONTOLOGY,
           summary_focus=SummaryFocus.ACADEMIC_RESEARCH
         )
-        logging.info("  doc generation ok")
-    except:
-        logging.error(" - doc generation failed!")
+    #    logging.info("  doc generation ok")
+    #except:
+    #    logging.error(" - doc generation failed!")
     return d.make_document()
 
 
