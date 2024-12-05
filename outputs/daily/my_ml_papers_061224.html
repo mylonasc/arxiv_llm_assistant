@@ -1,0 +1,79 @@
+<html><head></head><html><head><style>
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  border: 5px ;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+</style></head><body><div class="intro content">
+<h1>Discover the Latest Breakthroughs in Machine Learning Research</h1>
+<p>Welcome to our newsletter, where we bring you the most recent developments in the exciting world of machine learning. In this edition, we highlight potential breakthroughs from a variety of papers, including the use of Common Crawl for pre-training Large Language Models, a task-agnostic framework for enhancing linguistic diversity, and a versatile VLM for transfer tasks. We also explore a multi-scale transformer-based model for volumetric super-resolution, a novel approach for reducing computational and memory overhead in large vision-language models, and a large-scale monolingual dataset for the Yoruba language. Additionally, we review the potential of large language models in automating complex tasks in the biomedical domain and discuss the need for ensuring fairness in pre-trained models. Lastly, we introduce a large-scale multilingual dataset for YouTube comments and a specialized BERT-based framework for real-time financial event detection and analysis. These cutting-edge advancements have the potential to greatly impact academic research and pave the way for even more exciting developments in the field of machine learning. So, let's dive in and discover the latest breakthroughs together!</p> </div><div class="content">
+<h4><a href=http://arxiv.org/abs/2412.03398v1>RedStone: Curating General, Code, Math, and QA Data for Large Language Models (2412.03398v1)</a> </h4>
+<p>
+The paper discusses the potential of using Common Crawl as a resource for pre-training Large Language Models (LLMs). The authors introduce RedStone, a scalable pipeline that can extract and process data from Common Crawl to create extensive and varied pre-training datasets for multiple domains. This innovative approach lowers the barrier for creating valuable domain-specific datasets and highlights the importance of web-scale data in the evolution of LLMs. The publicly available RedStone code and data samples have the potential to make a lasting impact in academic research by providing a flexible and comprehensive resource for pre-training LLMs.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2412.03343v1>Improving Linguistic Diversity of Large Language Models with Possibility Exploration Fine-Tuning (2412.03343v1)</a> </h4>
+<p>
+This paper presents a task-agnostic framework, Possibility Exploration Fine-Tuning (PEFT), which enhances the linguistic diversity of Large Language Models (LLMs) without increasing computational cost or latency. Experiments show that PEFT significantly improves the diversity of LLM outputs and reduces demographic bias in dialogue systems. This technique has the potential to create a lasting impact in academic research by addressing concerns about the homogenization of viewpoints and underrepresentation of specific demographic groups in LLM outputs.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2412.03555v1>PaliGemma 2: A Family of Versatile VLMs for Transfer (2412.03555v1)</a> </h4>
+<p>
+PaliGemma 2 is a versatile VLM that builds upon the success of its predecessor, PaliGemma, by incorporating the SigLIP-So400m vision encoder and the Gemma 2 family of language models. This allows for a wide range of transfer tasks to be performed, including OCR-related tasks and captioning. The various model sizes and resolutions used in training provide a comprehensive understanding of the factors that impact transfer performance. This has the potential to greatly benefit academic research in the field of VLMs and their applications.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2412.03379v1>Mapping using Transformers for Volumes -- Network for Super-Resolution with Long-Range Interactions (2412.03379v1)</a> </h4>
+<p>
+The paper presents a multi-scale transformer-based model, MTVNet, for volumetric super-resolution that overcomes the limitations of previous methods in utilizing long-range interactions. By incorporating transformer layers at each resolution, MTVNet allows for attention over larger regions and demonstrates improved performance on larger 3D datasets. This technique has the potential to significantly impact academic research in volumetric super-resolution by leveraging the strengths of transformer-based models.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2412.03409v1>PrefixKV: Adaptive Prefix KV Cache is What Vision Instruction-Following Models Need for Efficient Generation (2412.03409v1)</a> </h4>
+<p>
+The paper presents PrefixKV, a novel approach for reducing the computational and memory overhead of large vision-language models (LVLMs) during inference. By adapting the key-value (KV) cache size for each layer based on a global prefix configuration, PrefixKV preserves maximum contextual information and improves generation efficiency and quality. This technique has the potential to significantly impact the deployment of LVLMs in practical scenarios.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2412.03334v1>Yankari: A Monolingual Yoruba Dataset (2412.03334v1)</a> </h4>
+<p>
+The paper presents Yankari, a large-scale monolingual dataset for the Yoruba language, addressing the lack of NLP resources for this important West African language. The dataset, created through careful source selection and rigorous data cleaning, comprises over 30 million tokens from 51,407 documents. This dataset has the potential to greatly benefit academic research in NLP, comparative linguistics, and digital accessibility of the Yoruba language.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2412.03531v1>A Review on Scientific Knowledge Extraction using Large Language Models in Biomedical Sciences (2412.03531v1)</a> </h4>
+<p>
+This paper reviews the potential of large language models (LLMs) in automating complex tasks in the biomedical domain, such as evidence synthesis and data extraction. While LLMs show promise, challenges such as hallucinations and contextual understanding need to be addressed. The paper suggests future research directions, including the integration of retrieval-augmented generation, to enhance LLM performance and improve access to medical literature for meaningful discoveries in healthcare.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2412.03537v1>Evaluating Gender Bias Transfer between Pre-trained and Prompt-Adapted Language Models (2412.03537v1)</a> </h4>
+<p>
+This paper explores the potential for bias transfer between pre-trained and prompt-adapted language models, which are increasingly being used in real-world decision systems. The study finds that biases in pre-trained models strongly correlate with biases in prompted models, even when prompted to exhibit fair or biased behavior. This highlights the need for ensuring fairness in pre-trained models to avoid perpetuating biases in downstream tasks.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2412.03465v1>YT-30M: A multi-lingual multi-category dataset of YouTube comments (2412.03465v1)</a> </h4>
+<p>
+This paper presents a large-scale multilingual dataset of YouTube comments, YT-30M, which contains over 32 million comments from various YouTube categories. The dataset, along with a smaller sample of 100K comments, is publicly available for further research. This has the potential to greatly benefit academic research in areas such as sentiment analysis, language processing, and social media studies.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2412.03527v1>FANAL -- Financial Activity News Alerting Language Modeling Framework (2412.03527v1)</a> </h4>
+<p>
+FANAL is a specialized BERT-based framework designed for real-time financial event detection and analysis. It uses advanced fine-tuning techniques and a novel variant of BERT to achieve superior accuracy and cost efficiency compared to other large language models. This framework has the potential to greatly improve financial intelligence and responsiveness in academic research.</p>
+</div></body></html><body></body></html>
