@@ -1,8 +1,7 @@
-
 arxiv
 langchain
 openai
 sentence-transformers
 transformers
-sklearn
+scikit-learn
 openai
