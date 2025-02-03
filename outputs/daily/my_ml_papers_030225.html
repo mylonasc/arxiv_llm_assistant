@@ -1,0 +1,84 @@
+<html><head></head><html><head><style>
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  border: 5px ;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+</style></head><body><div class="intro content">
+<h1>Recent Developments in Machine Learning Research: Potential Breakthroughs and Exciting Discoveries</h1>
+
+<p>Welcome to the latest edition of our newsletter, where we bring you the most recent and groundbreaking developments in the world of machine learning research. In this issue, we will be focusing on some of the most promising techniques and methods that have the potential to revolutionize the field of machine learning and impact academic research in various domains.</p>
+
+<p>From improving the performance of language models to enhancing reasoning abilities and enabling more efficient inference, the papers included in this newsletter present a diverse range of exciting breakthroughs. These developments have the potential to not only advance the field of machine learning but also have a lasting impact on various industries and fields that rely on this technology.</p>
+
+<p>Join us as we dive into the world of machine learning and explore the potential of these cutting-edge techniques. Get ready to be inspired and amazed by the latest advancements in this rapidly evolving field. Let's begin!</p> </div><div class="content">
+<h4><a href=http://arxiv.org/abs/2501.19399v1>Scalable-Softmax Is Superior for Attention (2501.19399v1)</a> </h4>
+<p>
+The paper presents a new technique, Scalable-Softmax (SSMax), which addresses the limitations of Softmax in Transformer-based language models. SSMax allows for better prioritization of key information in long contexts, resulting in improved performance and length generalization. This technique has the potential to significantly impact academic research in language modeling and potentially other fields that rely on attention mechanisms.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2501.19215v1>Strassen Attention: Unlocking Compositional Abilities in Transformers Based on a New Lower Bound Method (2501.19215v1)</a> </h4>
+<p>
+The paper presents a new method, Strassen attention, for evaluating the theoretical limits of Transformers and proves its potential to improve reasoning abilities in three advanced tasks. The proposed mechanism has sub-cubic running-time complexity and outperforms other attention mechanisms in experiments. This has the potential to guide future research towards more scalable and effective attention mechanisms for Transformers in academic research.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2501.19392v1>Cache Me If You Must: Adaptive Key-Value Quantization for Large Language Models (2501.19392v1)</a> </h4>
+<p>
+The paper presents AQUA-KV, an adaptive quantization technique for Key-Value caching in large language models (LLMs). By exploiting dependencies between keys and values and using high-compression mechanisms, AQUA-KV significantly improves compression rates while maintaining high accuracy. This one-shot, simple, and efficient approach has the potential to create a lasting impact in academic research by enabling near-lossless inference at low bit rates for LLMs.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2501.19389v1>Federated Sketching LoRA: On-Device Collaborative Fine-Tuning of Large Language Models (2501.19389v1)</a> </h4>
+<p>
+FSLoRA is a new technique that combines federated fine-tuning and low-rank adaptation to efficiently fine-tune large language models on devices. By using a sketching mechanism, FSLoRA can adapt to varying device capabilities and constraints, resulting in improved performance compared to existing methods. Its rigorous convergence analysis and superior performance make it a promising approach for future academic research in this field.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2501.19317v1>LLM-based Affective Text Generation Quality Based on Different Quantization Values (2501.19317v1)</a> </h4>
+<p>
+This paper explores the trade-off between quantization values and text quality in affective text generation using large language models. The findings show that reducing precision bits can significantly reduce computational resources, but at the cost of decreased accuracy and increased inference time. However, larger models at lower quantization levels generally outperform smaller, higher-precision models in terms of text quality, making this technique a potential cost-effective solution for researchers with limited resources.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2501.19309v1>Judge Decoding: Faster Speculative Sampling Requires Going Beyond Model Alignment (2501.19309v1)</a> </h4>
+<p>
+This paper presents a new technique called "judge decoding" that aims to accelerate autoregressive generation in large language models (LLMs). By incorporating a "judge" module that can recognize correct but non-aligned replies, the proposed method achieves a significant speedup of up to 9x while maintaining high quality results. This has the potential to greatly impact academic research in the field of LLMs by enabling faster and more efficient inference.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2501.19324v1>Reward-Guided Speculative Decoding for Efficient LLM Reasoning (2501.19324v1)</a> </h4>
+<p>
+The paper presents a new framework, Reward-Guided Speculative Decoding (RSD), for improving the efficiency of inference in large language models (LLMs). RSD combines a lightweight draft model with a more powerful target model, using a process reward model to dynamically decide when to invoke the target model. The paper demonstrates that RSD achieves significant efficiency gains and better accuracy compared to existing methods, making it a promising approach for deploying LLMs in resource-intensive scenarios.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2501.19393v1>s1: Simple test-time scaling (2501.19393v1)</a> </h4>
+<p>
+The paper presents a simple approach to test-time scaling in language modeling, using extra compute to improve performance. By curating a small dataset and developing budget forcing techniques, the proposed model outperforms previous methods on competition math questions and shows potential for further improvement without test-time intervention. The open-source availability of the model, data, and code can have a lasting impact on academic research in this area.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2501.19361v1>We're Different, We're the Same: Creative Homogeneity Across LLMs (2501.19361v1)</a> </h4>
+<p>
+This paper explores the potential impact of using large language models (LLMs) as creative assistants in academic research. While LLMs are marketed as helpful tools, previous studies have shown that they can limit the range of creative outputs. This paper investigates whether this limitation is specific to certain LLMs or a general effect of using LLMs as creative partners. The findings suggest that LLMs tend to produce similar outputs, which could have a lasting impact on the diversity of creative ideas in academic research.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2501.19306v1>SETS: Leveraging Self-Verification and Self-Correction for Improved Test-Time Scaling (2501.19306v1)</a> </h4>
+<p>
+The paper presents a novel method, SETS, that leverages self-verification and self-correction capabilities of Large Language Models (LLMs) to improve performance on complex reasoning tasks. Through extensive experiments, the paper demonstrates that SETS outperforms conventional approaches and has more favorable test-time scaling laws, making it a promising technique for future academic research in this field.</p>
+</div></body></html><body></body></html>
