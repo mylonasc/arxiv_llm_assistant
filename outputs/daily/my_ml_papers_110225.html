@@ -1,0 +1,79 @@
+<html><head></head><html><head><style>
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  border: 5px ;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+</style></head><body><div class="intro content">
+<h1>Recent Developments in Machine Learning Research: Breakthroughs and Innovations</h1>
+<p>Welcome to the latest edition of our newsletter, where we bring you the most exciting and groundbreaking developments in the world of machine learning research. In this issue, we will be exploring recent papers that have the potential to revolutionize the field, from improving the efficiency of language models to enhancing their performance on complex tasks. These papers showcase the cutting-edge techniques and methods being developed by researchers to push the boundaries of what is possible with machine learning. Get ready to dive into the world of EfficientLLM, Test-Time Scaling, MoETuner, and more, and discover how these advancements could shape the future of academic research in this field. So, let's get started and explore the potential breakthroughs presented in these papers!</p> </div><div class="content">
+<h4><a href=http://arxiv.org/abs/2502.06663v1>EfficientLLM: Scalable Pruning-Aware Pretraining for Architecture-Agnostic Edge Language Models (2502.06663v1)</a> </h4>
+<p>
+The paper presents EfficientLLM, a new approach to pretraining compact edge language models that addresses concerns about cloud costs, latency, and privacy. By introducing minimal parameter groups and using saliency-driven pruning, EfficientLLM outperforms current state-of-the-art baselines in common sense benchmarks. This technique has the potential to bridge the performance gap between traditional LLM compression and direct pretraining methods, making it a valuable contribution to academic research in this field.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2502.06766v1>Exploiting Sparsity for Long Context Inference: Million Token Contexts on Commodity GPUs (2502.06766v1)</a> </h4>
+<p>
+This paper presents a method for reducing the computational resources needed for performing inference on long contexts using transformer models. By attending to only the most relevant tokens, the proposed technique allows for efficient inference on up to 1 million tokens using commodity GPUs. This has the potential to greatly impact academic research by enabling the use of transformer models on widely available hardware for long context tasks.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2502.06742v1>Gradient Multi-Normalization for Stateless and Scalable LLM Training (2502.06742v1)</a> </h4>
+<p>
+This paper presents a novel framework for designing stateless optimizers for training large language models (LLMs). The proposed technique, called Gradient Multi-Normalization, is inspired by the success of SWAN and aims to reduce the computational cost and memory requirements of LLM training. Experiments show that this approach can achieve a 3X speedup over traditional optimizers while still producing high-performing models, making it a promising technique for future research in this field.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2502.06703v1>Can 1B LLM Surpass 405B LLM? Rethinking Compute-Optimal Test-Time Scaling (2502.06703v1)</a> </h4>
+<p>
+This paper explores the potential of Test-Time Scaling (TTS) methods to improve the performance of Large Language Models (LLMs) on complex tasks. Through experiments on MATH-500 and AIME24, the authors demonstrate that TTS can significantly enhance the reasoning abilities of LLMs, with smaller models outperforming larger ones. This highlights the importance of adapting TTS strategies to the specific characteristics of each task and model, and suggests a promising avenue for future research in this area.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2502.06737v1>VersaPRM: Multi-Domain Process Reward Model via Synthetic Reasoning Data (2502.06737v1)</a> </h4>
+<p>
+VersaPRM is a multi-domain Process Reward Model that addresses the limitations of current PRMs by introducing a novel data generation and annotation method. It consistently outperforms existing PRMs in diverse domains, such as Law, and has the potential to greatly enhance mathematical reasoning for Large Language Models. The open-sourcing of data, code, and models for VersaPRM will have a lasting impact on academic research in this field.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2502.06589v1>Hephaestus: Improving Fundamental Agent Capabilities of Large Language Models through Continual Pre-Training (2502.06589v1)</a> </h4>
+<p>
+The paper introduces Hephaestus-Forge, a large-scale pre-training corpus designed to enhance the fundamental capabilities of large language model (LLM) agents. By continually pre-training on this corpus, Hephaestus outperforms smaller LLMs and rivals commercial LLMs on three agent benchmarks. This has the potential to greatly improve the capabilities and generalizability of LLMs in academic research, making them more effective for new tasks and environments.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2502.06733v1>Dynamic Loss-Based Sample Reweighting for Improved Large Language Model Pretraining (2502.06733v1)</a> </h4>
+<p>
+This paper introduces novel algorithms for dynamic, instance-level data reweighting in large language model pretraining. By adjusting the weight of each training sample based on its loss value, the model can focus on more informative or important samples, leading to faster convergence and improved performance. The authors also provide a theoretical framework for analyzing the impact of loss-based reweighting on convergence, highlighting the potential for these techniques to have a lasting impact on academic research in this field.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2502.06635v1>Steel-LLM:From Scratch to Open Source -- A Personal Journey in Building a Chinese-Centric LLM (2502.06635v1)</a> </h4>
+<p>
+Steel-LLM is a Chinese-centric language model developed from scratch with the goal of creating a high-quality, open-source model. The project prioritized transparency and sharing practical insights to assist others in the community. It has demonstrated competitive performance and offers a valuable resource for researchers and practitioners looking to develop their own LLMs. The availability of model checkpoints and training scripts on GitHub has the potential to create a lasting impact in academic research of language models.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2502.06659v1>Who Taught You That? Tracing Teachers in Model Distillation (2502.06659v1)</a> </h4>
+<p>
+The paper explores the potential for identifying the teacher model used in model distillation, where a large model is used to teach a smaller one. This could have practical implications for creating efficient models and could also raise concerns about violating terms of service. The study focuses on specific tasks and finds that certain lexical features, such as part-of-speech templates, can be used to identify the teacher model. This could have a lasting impact on the use and development of model distillation techniques in academic research.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2502.06643v1>MoETuner: Optimized Mixture of Expert Serving with Balanced Expert Placement and Token Routing (2502.06643v1)</a> </h4>
+<p>
+MoETuner is a new approach for optimizing the performance of Mixture-of-Experts (MoE) models by balancing expert placement and token routing. By using an Integer Linear Programming (ILP) formulation, MoETuner minimizes communication and computation costs, resulting in significant speedups for single-node and multi-node inference. This technique has the potential to greatly improve the efficiency and scalability of MoE models in academic research.</p>
+</div></body></html><body></body></html>
