@@ -1,0 +1,79 @@
+<html><head></head><html><head><style>
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  border: 5px ;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+</style></head><body><div class="intro content">
+<h1>Recent Developments in Machine Learning Research: Potential Breakthroughs and Impact</h1>
+<p>Welcome to our latest newsletter, where we highlight recent developments in machine learning research that have the potential to make a lasting impact. From improving the efficiency of large language models (LLMs) to creating scalable benchmarks for vision language models (VLMs), these papers showcase innovative approaches and techniques that could lead to breakthroughs in the field. We'll explore the use of LLMs in multilingual tasks, dynamic pruning techniques, and novel methods for compressing intermediate thoughts during reasoning. We'll also dive into the potential of scaling LLMs for retrieval model performance and the impact of machine-generated text on academic research. Plus, we'll take a closer look at the relationship between reasoning and performance in LLMs and a promising new approach for multi-label relation extraction in French texts. Join us as we delve into the latest developments and their potential to shape the future of machine learning research.</p> </div><div class="content">
+<h4><a href=http://arxiv.org/abs/2502.15603v1>Do Multilingual LLMs Think In English? (2502.15603v1)</a> </h4>
+<p>
+This paper explores the use of large language models (LLMs) in multilingual tasks and finds that they tend to make decisions based on English representations, regardless of the input and output languages. This has implications for the effectiveness of activation steering and suggests that LLMs may heavily rely on English in their reasoning processes. These findings have the potential to impact future research on multilingual LLMs and their use in various applications.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2502.15618v1>Probe Pruning: Accelerating LLMs through Dynamic Pruning via Model-Probing (2502.15618v1)</a> </h4>
+<p>
+"Probe Pruning (PP) is a new framework for dynamic pruning of Large Language Models (LLMs) that identifies crucial weights in each batch and prunes them accordingly. This approach has the potential to significantly improve the efficiency of structured pruning in LLMs, as demonstrated by its successful implementation on various models. Its compatibility with existing models makes it a promising technique for lasting impact in academic research."</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2502.15589v1>LightThinker: Thinking Step-by-Step Compression (2502.15589v1)</a> </h4>
+<p>
+The paper presents LightThinker, a novel method for compressing intermediate thoughts in large language models (LLMs) during reasoning. Inspired by human cognitive processes, LightThinker significantly reduces memory and computational costs by training the model to compress verbose thought steps into compact representations. The proposed method, along with the introduction of the Dependency metric, shows promising results in improving the efficiency of LLMs without sacrificing performance. This has the potential to create a lasting impact in academic research by providing a new direction for improving the efficiency of LLMs in complex reasoning tasks.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2502.15572v1>DReSD: Dense Retrieval for Speculative Decoding (2502.15572v1)</a> </h4>
+<p>
+DReSD is a new framework that uses dense retrieval with contextualized token embeddings to improve the effectiveness of speculative decoding (SD) in accelerating Large Language Model (LLM) generation. It achieves significantly higher acceptance rates, longer accepted tokens, and faster generation speeds compared to the current dominant paradigm of sparse retrieval (REST). This has the potential to greatly impact academic research in the use of SD for LLM generation.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2502.15499v1>Scale-Distribution Decoupling: Enabling Stable and Effective Training of Large Language Models (2502.15499v1)</a> </h4>
+<p>
+The paper presents a novel approach, Scale-Distribution Decoupling (SDD), for stabilizing the training of large language models (LLMs). By explicitly decoupling the scale and distribution of weight matrices, SDD effectively prevents gradient explosion and dissipation, improving optimization efficiency and stability in deep networks. The proposed method is lightweight, compatible with existing frameworks, and outperforms existing techniques, making it a promising solution for stabilizing LLM training and potentially impacting future research in this area.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2502.15526v1>Scaling Sparse and Dense Retrieval in Decoder-Only LLMs (2502.15526v1)</a> </h4>
+<p>
+This paper explores the potential of scaling large language models (LLMs) for improving retrieval model performance. Through a comparative study, the authors show that sparse retrieval and knowledge distillation (KD) techniques can also benefit from scaling, in addition to dense retrieval trained with contrastive loss (CL). They also demonstrate the robustness of sparse retrieval models and achieve state-of-the-art results by combining CL and KD losses at a large scale. These findings have the potential to significantly impact academic research in the field of retrieval models.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2502.15654v1>Machine-generated text detection prevents language model collapse (2502.15654v1)</a> </h4>
+<p>
+This paper explores the potential impact of machine-generated text on academic research, as Large Language Models (LLMs) become more prevalent. The study investigates the characteristics of generated data and its similarity to human references, and proposes a novel methodology to prevent model collapse and improve model performance. This has the potential to ensure the reliability and accuracy of LLMs in future research.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2502.15631v1>The Relationship Between Reasoning and Performance in Large Language Models -- o3 (mini) Thinks Harder, Not Longer (2502.15631v1)</a> </h4>
+<p>
+This paper explores the relationship between reasoning and performance in large language models, specifically focusing on the impact of reasoning token usage on accuracy gains. The results suggest that newer generations of models are able to use test-time compute more effectively, leading to improved performance without requiring longer reasoning chains. This has important implications for efficiency, scaling, and evaluation methods in academic research on large language models.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2502.15619v1>Extraction multi-étiquettes de relations en utilisant des couches de Transformer (2502.15619v1)</a> </h4>
+<p>
+The BTransformer18 model, which combines pre-trained language models with Transformer encoders, shows promising results for multi-label relation extraction in French texts. With a macro F1 score of 0.654, it outperforms other models and demonstrates the potential for this approach to have a lasting impact on the automatic extraction of complex relations in intelligence reports.</p>
+</div>
+<div class="content">
+<h4><a href=http://arxiv.org/abs/2502.15563v1>Bridging vision language model (VLM) evaluation gaps with a framework for scalable and cost-effective benchmark generation (2502.15563v1)</a> </h4>
+<p>
+This paper presents a framework for creating scalable and cost-effective benchmarks for vision language models (VLMs). By addressing the challenges of cross-domain performance comparison and targeted domain-specific evaluation, this framework has the potential to significantly impact academic research in the field. The release of new VLM benchmarks for seven domains and extensive benchmarking of 22 state-of-the-art models further supports the need for tailored benchmarks and can guide future research efforts.</p>
+</div></body></html><body></body></html>
